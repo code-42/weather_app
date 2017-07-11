@@ -11,7 +11,7 @@ $(document).ready(function(){
             console.log("2.geoUrl == " + geoUrl);        
 
 // pass the geo-coordinates to the api data object
-            var url = "https://api.openweathermap.org/data/2.5/weather";
+            var url = "http://api.openweathermap.org/data/2.5/weather?q=";
             var data = {"appid":"a806a6b5e2943ee6f6d7e4a1d752ffbb", 
                         "zip":"02908,us", 
                         "units":"imperial",
@@ -21,6 +21,7 @@ $(document).ready(function(){
 
 // the ajax call to the weather api returns a json object 
             $.ajax({
+                dataType: "jsonp",
                 url:url,
                 data:data,
                 success: function(response) {
