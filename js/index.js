@@ -11,7 +11,7 @@ $(document).ready(function(){
             console.log("2.geoUrl == " + geoUrl);        
 
 // pass the geo-coordinates to the api data object
-            var url = "http://api.openweathermap.org/data/2.5/weather";
+            var url = "https://api.openweathermap.org/data/2.5/weather";
             var data = {"appid":"a806a6b5e2943ee6f6d7e4a1d752ffbb", 
                         "zip":"02908,us", 
                         "units":"imperial",
