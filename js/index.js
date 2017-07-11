@@ -7,11 +7,11 @@ $(document).ready(function(){
             var geolat = position.coords.latitude;
 
             console.log("1.geolon & geolat == " + geolon + " : " + geolat);
-            var geoUrl = "https://api.openweathermap.org/data/2.5/weather?lon="+geolon+"&lat="+geolat+"&APPID=712e37ac7b186771a8a0c984185073cf";
+            var geoUrl = "http://api.openweathermap.org/data/2.5/weather?lon="+geolon+"&lat="+geolat+"&APPID=712e37ac7b186771a8a0c984185073cf";
             console.log("2.geoUrl == " + geoUrl);        
 
 // pass the geo-coordinates to the api data object
-            var url = "http://api.openweathermap.org/data/2.5/weather?q=";
+            var url = "http://api.openweathermap.org/data/2.5/weather";
             var data = {"appid":"a806a6b5e2943ee6f6d7e4a1d752ffbb", 
                         "zip":"02908,us", 
                         "units":"imperial",
