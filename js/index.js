@@ -10,6 +10,7 @@ $(document).ready(function(){
 
             var apiKey = "c6978e88081b712d";
 
+// pass the geo-coordinates to the api data object
             var url = "//api.wunderground.com/api/"+apiKey+"/geolookup/q/"+geolat+","+geolon+".json";
             console.log("2.url == " + url);
             var weather_api = new XMLHttpRequest();
@@ -47,7 +48,8 @@ $(document).ready(function(){
                     document.getElementById("weather-data").style.color = "#000000";
                     break;
                 case "Overcast":
-                    document.body.style.backgroundImage = "url('http://www.sitkanature.org/wordpress/wp-content/gallery/20100923/20100923-overcast-1.jpg')";
+                    // document.body.style.backgroundImage = "url('http://www.sitkanature.org/wordpress/wp-content/gallery/20100923/20100923-overcast-1.jpg')";
+                    document.body.style.backgroundImage = "url('https://instacam.weatherbug.com/instacamimg/PRVWL/07152017/071520170931_l.jpg')";
                     document.body.style.color = "#ffffff";
                     document.getElementById("weather-data").style.color = "#ffffff";
                     break;
@@ -62,28 +64,3 @@ $(document).ready(function(){
 });
 
 
-// 	jQuery(document).ready(function($) {
-// 	  $.ajax({
-// 	  url : "http://api.wunderground.com/api/c6978e88081b712d/conditions/q/RI/Providence.json",
-//  http://api.wunderground.com/api/c6978e88081b712d/geolookup/q/37.776289,-122.395234.json
-// 	  dataType : "jsonp",
-// 	  success : function(parsed_json) {
-// 	  var location = parsed_json['location']['city'];
-// 	  var temp_f = parsed_json['current_observation']['temp_f'];
-// 	  alert("Current temperature in " + location + " is: " + temp_f);
-// 	  }
-// 	  });
-// 	});
-
-// outside scope
-            // var geoUrl = "http://api.openweathermap.org/data/2.5/weather?lon="+geolon+"&lat="+geolat+"&APPID=712e37ac7b186771a8a0c984185073cf";
-            // var geoUrl = "http://api.wunderground.com/api/c6978e88081b712d/geolookup/q/"+geolon+","+geolat+".json"
-            // console.log("2.geoUrl == " + geoUrl);        
-
-// pass the geo-coordinates to the api data object
-            // var url = "http://api.openweathermap.org/data/2.5/weather";
-            // var data = {"appid":"a806a6b5e2943ee6f6d7e4a1d752ffbb", 
-                        // "zip":"02908,us", 
-                        // "units":"imperial",
-                        
-           // document.getElementById("icon").innerHTML = "<img src='"+icon+"' alt='icon'/>";                        
