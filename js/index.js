@@ -57,7 +57,11 @@ $(document).ready(function(){
                     document.body.style.backgroundImage = "url('https://www.pixelstalk.net/wp-content/uploads/2016/07/Weather-Background-HD-620x388.jpg')";
                     document.body.style.color = "#ffffff";
                     document.getElementById("weather-data").style.color = "#ffffff";
-                    break;    
+                    break; 
+                default:
+                    document.body.style.backgroundImage = "url('http://fanaru.com/weather-fun/image/157923-weather-fun-hot-summer-day.jpg')";
+                    document.body.style.color = "green";
+                    document.getElementById("weather-data").style.color = "#000000";
                 }
             });        
        } 
