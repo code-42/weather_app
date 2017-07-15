@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+
 	<meta charset="UTF-8">
-	<meta content="Random Quote Machine" name="description">
+	<meta content="Weather App" name="description">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta content="width=device-width, initial-scale=1" name="viewport"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<!-- Latest compiled and minified CSS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"><!-- Optional theme -->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet"><!-- MY CUSTOM CSS THAT OVERRIDES BOOTSTRAP -->
-	<!--<link href="css/index.css" rel="stylesheet" type="text/css">-->
+	<link href="css/index.css" rel="stylesheet" type="text/css">
 	<script src="js/index.js"></script>
-	<title>Weather App</title>
+
+	<title>Flex Weather</title>
 </head>
+  </head>
+  <!--<body style="background: url(http://fanaru.com/weather-fun/image/157923-weather-fun-hot-summer-day.jpg) no-repeat center center fixed;">-->
 <body>
-		<div class="container-fluid">
-			<div>
-				<div class="text-center">
-					<h1>Weather App</h1><br>
-				</div>
-			<!--	<button type="submit" onclick="getWeather()" id="weather"> Get Weather </button>-->
-			<!--<p id="weather"></p>-->
-			
-			<p>The temperature is <span id="tempr"></span> degrees F</p>
-			<p id="geodata"></p>
-			<!--<p id="apidata"></p>-->
-			</div>
-		</div>
+    <header>
+      <h1 class="h1header">Weather App</h1>
+    </header>
+    <main>
+      <div class="weather-data" id="weather-data">
+      <!--<nav><div id="icon"></div></nav>-->
+      <article>
+      				
+				<div id="loc"></div>
+				<div id="time"></div>
+				<div id="temp"></div>
+				<div id="weather"></div>
+				<div id="wind"></div>
+				
+      </article>
+      </div>
+      <!--<aside>aside</aside>-->
+    </main>
+    
 
-    <!-- FOOTER -->
-	<footer>
-		<p id="footer">&copy; 2017 Edward Dupre &middot; <a href="https://code-42.github.io/my_portfolio">Back to My Portfolio</a></p>
-	</footer>
-	<!-- Bootstrap core JavaScript -->
-	<!-- Placed at the end of the document so the pages load faster -->
-
-	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
-	<!--<link rel="stylesheet" href="//code.jquery.com/ui/1.8.10/themes/smoothness/jquery-ui.css" type="text/css">-->
-	<!--<script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/jquery-ui.min.js"></script>-->
-
-	
-
-</body>
+    <footer>
+  		<p id="footer">&copy; 2017 Edward Dupre &middot; <a href="https://code-42.github.io/my_portfolio">Back to My Portfolio</a></p>
+  	</footer>
+  </body>
 </html>

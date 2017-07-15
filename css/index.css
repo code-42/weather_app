@@ -1,5 +1,259 @@
-body{
-    background-color: #e3deee;
-    text-align:center;
-    display:block;
+/* Mobile First Design */
+@media screen and (max-width: 480px) {
+    #main, #page {
+        flex-direction: column;
+    }
+
+    #main > article, #main > nav, #main > aside {
+     /*Return them to document order */
+        order: 0;
+        
+    }
+
+    #main > nav, #main > aside, header, footer {
+        min-height: 50px;
+        max-height: 50px;
+        
+    }
+    
+    #temp #time{
+        font-size: 14px;
+    }
+    
+    .weather-data{
+        margin-top:20px;
+        background-color:green;
+        width: 80%;
+        margin-right:auto;
+        margin-left:auto;
+        margin-bottom: 10px;
+        padding:10px;
+        height:auto;
+        color:blue;
+        font-size:20px;
+        display: block;
+        position: relative;
+        bottom:0;
+        left: 10%;
+        height: 20%;
+        flex-basis: 10%;
+        color:white;
+        margin: 4px;
+        margin-top: -20px;
+        margin-bottom: 0;
+        padding: 5px;
+        min-height: 500px;
+        background: transparent;
+        }
+        
+    body{
+        text-align:center;
+        background-color: transparent;
+        /*color:black;*/
+        background-repeat: no-repeat;
+        background-position:center;
+        background-attachment:fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
 }
+
+@media screen and (min-width: 481px) {
+    #main, #page {
+        flex-direction: column;
+    }
+
+    #main > article, #main > nav, #main > aside {
+     /*Return them to document order */
+        order: 0;
+        
+    }
+
+    #main > nav, #main > aside, header, footer {
+        min-height: 50px;
+        max-height: 50px;
+        
+    }
+    
+    #temp{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .weather-data{
+        width: 80%;
+        margin-right:auto;
+        margin-left:auto;
+        margin-bottom: 10px;
+        padding:10px;
+        height:auto;
+        font-size:20px;
+        display: block;
+        position: relative;
+        bottom:0;
+        left: 10%;
+        height: 20%;
+        flex-basis: 10%;
+        color:white;
+        margin: 4px;
+        margin-bottom: 0;
+        padding: 5px;
+        background: transparent;
+        }
+        
+    body{
+        text-align:center;
+        background-color: transparent;
+        /*color:black;*/
+        background-repeat: no-repeat;
+        background-position:center;
+        background-attachment:fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    #main, #page {
+        flex-direction: column;
+    }
+
+    #main > article, #main > nav, #main > aside {
+     /*Return them to document order */
+        order: 0;
+        
+    }
+
+    #main > nav, #main > aside, header, footer {
+        min-height: 50px;
+        max-height: 50px;
+        
+    }
+    
+    #temp{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .weather-data{
+        width: 80%;
+        margin-right:auto;
+        margin-left:auto;
+        margin-bottom: 10px;
+        padding:10px;
+        height:auto;
+        font-size:20px;
+        display: block;
+        position: relative;
+        bottom:0;
+        left: 10%;
+        height: 20%;
+        flex-basis: 10%;
+        /*color:black;*/
+        margin: 4px;
+        margin-bottom: 0;
+        padding: 5px;
+        background: transparent;
+        }
+        
+    body{
+        text-align:center;
+        background-color: transparent;
+        /*color:black;*/
+        background-repeat: no-repeat;
+        background-position:center;
+        background-attachment:fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+}
+
+@media screen and (min-width: 769px) {
+    #main, #page {
+        flex-direction: column;
+    }
+
+    #main > article, #main > nav, #main > aside {
+     /*Return them to document order */
+        order: 0;
+        
+    }
+
+    #main > nav, #main > aside, header, footer {
+        min-height: 50px;
+        max-height: 50px;
+        
+    }
+    
+    #temp{
+        font-size: 36px;
+        font-weight: bold;
+    }
+    
+    .weather-data{
+        width: 80%;
+        margin-right:auto;
+        margin-left:auto;
+        margin-bottom: 10px;
+        padding:10px;
+        height:auto;
+        font-size:20px;
+        display: block;
+        position: relative;
+        bottom:0;
+        left: 10%;
+        height: 20%;
+        flex-basis: 10%;
+        /*color:black;*/
+        margin: 4px;
+        margin-bottom: 0;
+        padding: 5px;
+        background: transparent;
+        }
+        
+    body{
+        text-align:center;
+        background-color: transparent;
+        /*color:black;*/
+        background-repeat: no-repeat;
+        background-position:center;
+        background-attachment: :fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+}
+
+ * {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+footer {
+    text-align: center;
+    display: block;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    color:white;
+    margin: 4px;
+    margin-top: -20px;
+    margin-bottom: 0;
+    padding: 5px;
+    background: transparent;
+}
+ 
+ 
