@@ -230,6 +230,7 @@
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        text-decoration: none;
     }
 
 }
@@ -254,6 +255,7 @@ footer {
     margin-bottom: 0;
     padding: 5px;
     background: transparent;
+    text-decoration: none;
 }
  
  

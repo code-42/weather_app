@@ -58,15 +58,21 @@ $(document).ready(function(){
                     document.body.style.color = "#ffffff";
                     document.getElementById("weather-data").style.color = "#ffffff";
                     break; 
-                case "Scattered Clouds":
+                case "Clouds":
                     document.body.style.backgroundImage = "url('https://4.bp.blogspot.com/-1rnXAQrIQgE/T7T7bB09LgI/AAAAAAAADV8/oTohLv0QMrI/s1600/clouds_guardian.jpg')";
                     document.body.style.color = "green";
                     document.getElementById("weather-data").style.color = "#000000";
                     break; 
+                case "Mostly Cloudy":
+                    document.body.style.backgroundImage = "url('https://icons.wxug.com/data/wximagenew/d/DesertNomad/337-800.jpg')";
+                    document.body.style.color = "green";
+                    document.getElementById("weather-data").style.color = "#000000";
+                    break;    
                 default:
                     document.body.style.backgroundImage = "url('http://fanaru.com/weather-fun/image/157923-weather-fun-hot-summer-day.jpg')";
                     document.body.style.color = "green";
                     document.getElementById("weather-data").style.color = "#000000";
+                    document.getElementById("footer").style.color = "#000000";
                 }
             });        
        } 
