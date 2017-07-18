@@ -58,6 +58,11 @@ $(document).ready(function(){
                     document.body.style.color = "#ffffff";
                     document.getElementById("weather-data").style.color = "#ffffff";
                     break; 
+                case "Scattered Clouds":
+                    document.body.style.backgroundImage = "url('https://4.bp.blogspot.com/-1rnXAQrIQgE/T7T7bB09LgI/AAAAAAAADV8/oTohLv0QMrI/s1600/clouds_guardian.jpg')";
+                    document.body.style.color = "#ffffff";
+                    document.getElementById("weather-data").style.color = "#ffffff";
+                    break; 
                 default:
                     document.body.style.backgroundImage = "url('http://fanaru.com/weather-fun/image/157923-weather-fun-hot-summer-day.jpg')";
                     document.body.style.color = "green";
