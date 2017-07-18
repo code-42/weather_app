@@ -60,7 +60,7 @@ $(document).ready(function(){
                     break; 
                 case "Scattered Clouds":
                     document.body.style.backgroundImage = "url('https://4.bp.blogspot.com/-1rnXAQrIQgE/T7T7bB09LgI/AAAAAAAADV8/oTohLv0QMrI/s1600/clouds_guardian.jpg')";
-                    document.body.style.color = "#ffffff";
+                    document.body.style.color = "#green";
                     document.getElementById("weather-data").style.color = "#ffffff";
                     break; 
                 default:
