@@ -29,14 +29,14 @@ $(document).ready(function(){
             var resp = JSON.parse(weather_api.response);
             
             var loc = "Current location: " + resp.current_observation.display_location.full;
-            var time = resp.current_observation.observation_time;
+            var updated = resp.current_observation.observation_time;
             var temp = "Temperature: " + resp.current_observation.temperature_string;
             var weather = "Today's Outlook: " + resp.current_observation.weather;
             console.log("3.weather == " + resp.current_observation.weather);
-            console.log("4.time == " + time);
+            console.log("4.updated == " + updated);
             var wind = "Wind: " + resp.current_observation.wind_string;
             document.getElementById("loc").innerHTML = loc;
-            document.getElementById("time").innerHTML = time;
+            document.getElementById("updated").innerHTML = updated;
             document.getElementById("temp").innerHTML = temp;
             document.getElementById("weather").innerHTML = weather;
             document.getElementById("wind").innerHTML = wind;
@@ -44,11 +44,10 @@ $(document).ready(function(){
             switch (resp.current_observation.weather){
                 case "Sunny":
                     document.body.style.backgroundImage = "url('http://fanaru.com/weather-fun/image/157923-weather-fun-hot-summer-day.jpg')";
-                    document.body.style.color = "green";
+                    document.body.style.color = "#008000";
                     document.getElementById("weather-data").style.color = "#000000";
                     break;
                 case "Overcast":
-                    // document.body.style.backgroundImage = "url('http://www.sitkanature.org/wordpress/wp-content/gallery/20100923/20100923-overcast-1.jpg')";
                     document.body.style.backgroundImage = "url('https://instacam.weatherbug.com/instacamimg/PRVWL/07152017/071520170931_l.jpg')";
                     document.body.style.color = "#ffffff";
                     document.getElementById("weather-data").style.color = "#ffffff";
@@ -60,24 +59,23 @@ $(document).ready(function(){
                     break; 
                 case "Clouds":
                     document.body.style.backgroundImage = "url('https://4.bp.blogspot.com/-1rnXAQrIQgE/T7T7bB09LgI/AAAAAAAADV8/oTohLv0QMrI/s1600/clouds_guardian.jpg')";
-                    document.body.style.color = "green";
-                    document.getElementById("weather-data").style.color = "#000000";
+                    document.body.style.color = "#008000";
+                    document.getElementById("weather-data").style.color = "#008000";
                     break; 
                 case "Mostly Cloudy":
                     document.body.style.backgroundImage = "url('https://icons.wxug.com/data/wximagenew/d/DesertNomad/337-800.jpg')";
-                    document.body.style.color = "green";
+                    document.body.style.color = "#000000";
                     document.getElementById("weather-data").style.color = "#000000";
                     break;
                 case "Partly Cloudy":
                     document.body.style.backgroundImage = "url('http://media.nola.com/weather_impact/photo/partly-cloudy-skyjpg-7247bd47ea724ad3.jpg')";
-                    document.body.style.color = "green";
+                    document.body.style.color = "#000000";
                     document.getElementById("weather-data").style.color = "#000000";
                     break;    
                 default:
                     document.body.style.backgroundImage = "url('http://fanaru.com/weather-fun/image/157923-weather-fun-hot-summer-day.jpg')";
-                    document.body.style.color = "green";
-                    document.getElementById("weather-data").style.color = "#000000";
-                    document.getElementById("footer").style.color = "#000000";
+                    document.body.style.color = "#008000";
+                    document.getElementById("weather-data").style.color = "#008000";
                 }
             });        
        } 
