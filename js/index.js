@@ -67,6 +67,11 @@ $(document).ready(function(){
                     document.body.style.backgroundImage = "url('https://icons.wxug.com/data/wximagenew/d/DesertNomad/337-800.jpg')";
                     document.body.style.color = "green";
                     document.getElementById("weather-data").style.color = "#000000";
+                    break;
+                case "Partly Cloudy":
+                    document.body.style.backgroundImage = "url('http://media.nola.com/weather_impact/photo/partly-cloudy-skyjpg-7247bd47ea724ad3.jpg')";
+                    document.body.style.color = "green";
+                    document.getElementById("weather-data").style.color = "#000000";
                     break;    
                 default:
                     document.body.style.backgroundImage = "url('http://fanaru.com/weather-fun/image/157923-weather-fun-hot-summer-day.jpg')";
