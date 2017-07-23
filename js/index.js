@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
 
 // first, get geo-coordinates to pass to the weather api
     if(navigator.geolocation){
@@ -63,12 +63,14 @@ $(document).ready(function(){
                     document.getElementById("weather-data").style.color = "#008000";
                     break; 
                 case "Mostly Cloudy":
-                    document.body.style.backgroundImage = "url('https://icons.wxug.com/data/wximagenew/d/DesertNomad/337-800.jpg')";
+                    document.body.style.backgroundImage = "url('resources/PartlyCloudyWeatherAppImg.jpg')";
+                    https://icons.wxug.com/data/wximagenew/d/DesertNomad/337-800.jpg')";
                     document.body.style.color = "#000000";
                     document.getElementById("weather-data").style.color = "#000000";
                     break;
                 case "Partly Cloudy":
-                    document.body.style.backgroundImage = "url('http://media.nola.com/weather_impact/photo/partly-cloudy-skyjpg-7247bd47ea724ad3.jpg')";
+                    document.body.style.backgroundImage = "url('https://plus.google.com/u/0/photos/albums/pe03194g3i2nplvnbdfak4dmfegdrnfms?pid=6445955005824013458&oid=107909885845251142194')";
+                    //http://media.nola.com/weather_impact/photo/partly-cloudy-skyjpg-7247bd47ea724ad3.jpg')";
                     document.body.style.color = "#000000";
                     document.getElementById("weather-data").style.color = "#000000";
                     break;    
