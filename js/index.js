@@ -69,8 +69,9 @@ $(function(){
                     document.getElementById("weather-data").style.color = "#000000";
                     break;
                 case "Partly Cloudy":
-                    document.body.style.backgroundImage = "url('https://plus.google.com/u/0/photos/albums/pe03194g3i2nplvnbdfak4dmfegdrnfms?pid=6445955005824013458&oid=107909885845251142194')";
-                    //http://media.nola.com/weather_impact/photo/partly-cloudy-skyjpg-7247bd47ea724ad3.jpg')";
+                    document.body.style.backgroundImage = "url('resources/PartlyCloudyWeatherAppImg.jpg')";
+                    // https://plus.google.com/u/0/photos/albums/pe03194g3i2nplvnbdfak4dmfegdrnfms?pid=6445955005824013458&oid=107909885845251142194')";
+                    // http://media.nola.com/weather_impact/photo/partly-cloudy-skyjpg-7247bd47ea724ad3.jpg')";
                     document.body.style.color = "#000000";
                     document.getElementById("weather-data").style.color = "#000000";
                     break;    
