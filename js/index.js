@@ -48,7 +48,7 @@ $(function(){
                     document.getElementById("weather-data").style.color = "#000000";
                     break;
                 case "Overcast":
-                    document.body.style.backgroundImage = "url('https://instacam.weatherbug.com/instacamimg/PRVWL/07152017/071520170931_l.jpg')";
+                    document.body.style.backgroundImage = "url('resources/PartlyCloudyWeatherAppImg.jpg')";
                     document.body.style.color = "#ffffff";
                     document.getElementById("weather-data").style.color = "#ffffff";
                     break;
