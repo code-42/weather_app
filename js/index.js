@@ -64,7 +64,7 @@ $(function(){
                     break; 
                 case "Mostly Cloudy":
                     document.body.style.backgroundImage = "url('resources/PartlyCloudyWeatherAppImg.jpg')";
-                    https://icons.wxug.com/data/wximagenew/d/DesertNomad/337-800.jpg')";
+                    //https://icons.wxug.com/data/wximagenew/d/DesertNomad/337-800.jpg')";
                     document.body.style.color = "#000000";
                     document.getElementById("weather-data").style.color = "#000000";
                     break;
