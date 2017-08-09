@@ -1,3 +1,5 @@
+console.log("1.apiKey == " + apiKey);
+
 $(function(){
 
 // first, get geo-coordinates to pass to the weather api
