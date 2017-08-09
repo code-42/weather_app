@@ -14,19 +14,20 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"><!-- Optional theme -->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet"><!-- MY CUSTOM CSS THAT OVERRIDES BOOTSTRAP -->
 	<link href="css/index.css" rel="stylesheet" type="text/css">
+	<!-- script file for API keys.js file contents:
+    	var urlTag = '<script async defer src="https://maps.googleapis.com/maps/api/js?key=_PUT_YOUR_API_KEY_HERE_&v=3&callback=initMap"></script>'
+    -->  
+	<script src="js/keys.js"></script>
 	<script src="js/index.js">
 	</script>
 	<title>Weather App</title>
 </head>
 <body>
-	<!--<body style="background: url(http://fanaru.com/weather-fun/image/157923-weather-fun-hot-summer-day.jpg) no-repeat center center fixed;">-->
 	<header>
-		<!--<h1 class="h1header">Weather App</h1>-->
 		<h1>Weather App</h1>
 	</header>
 	<main>
 		<div class="weather-data" id="weather-data">
-			<!--<div class="weather-data">-->
 			<div id="loc"></div>
 			<div id="updated"></div>
 			<div id="temp"></div>

@@ -21,7 +21,7 @@ $(function(){
             var state = resp.location.state;
             console.log("3.api city & state == " + city + state);
             
-            // var url = "//api.wunderground.com/api/c6978e88081b712d/conditions/q/RI/Providence.json";
+// var url = "//api.wunderground.com/api/c6978e88081b712d/conditions/q/RI/Providence.json";
             var url = "//api.wunderground.com/api/"+apiKey+"/conditions/q/"+state+"/"+city+".json";
             var weather_api = new XMLHttpRequest();
             weather_api.open("GET", url, false);
