@@ -8,11 +8,6 @@ $(function(){
 
             console.log("1.geolon & geolat == " + geolon + " : " + geolat);
 
-<<<<<<< HEAD
-            var apiKey = "haha";
-
-=======
->>>>>>> v2-maskapikey
 // pass the geo-coordinates to the api data object
             var url = "//api.wunderground.com/api/"+apiKey+"/geolookup/q/"+geolat+","+geolon+".json";
             console.log("2.url == " + url);
