@@ -1,4 +1,5 @@
-console.log("1.apiKey == " + apiKey);
+// var apiKey = "https://ide.c9.io/code42/production/web_pages/weather_app/js/keys.js"
+// console.log("2.apiKey == " + apiKey);
 
 $(function(){
 
