@@ -1,6 +1,9 @@
 // freecodecamp weather app 
 // https://www.freecodecamp.org/challenges/show-the-local-weather
 
+// var apiKey = "LALALA/production/web_pages/weather_app/js/keys.js"
+// console.log("2.apiKey == " + apiKey);
+
 $(function(){
 // var apiKey = "c6978e88081b712d";
 var tUnit = "C";
@@ -44,6 +47,7 @@ var msg = "Click temperature above to convert C/F";
             weather_api.send(null);
             var resp = JSON.parse(weather_api.response);
 
+
             $("#cityName").html(resp.name);
             cTemp = Math.round(resp.main.temp * 10) / 10;
             $("#temp").html(cTemp);
@@ -51,7 +55,7 @@ var msg = "Click temperature above to convert C/F";
             $("#tunit").html(tUnit);
             $("#weather-description").html(resp.weather[0].description);
             $("#weather-icon").html(resp.weather[0].icon);
-             $("#msg").html(msg);
+            $("#msg").html(msg);
                  
                  //switch api from weatherunderground to fcc-weather-api.glitch.me
 // var url = "//api.wunderground.com/api/APIKEY/conditions/q/RI/Providence.json";
@@ -59,7 +63,18 @@ var msg = "Click temperature above to convert C/F";
             // var weather_api = new XMLHttpRequest();
             // weather_api.open("GET", url, false);
             // weather_api.send(null);
-            // var resp = JSON.parse(weather_api.response);
+
+            // var city = resp.location.city;
+            // var state = resp.location.state;
+            // console.log("3.api city & state == " + city + state);
+            
+// var url = "//api.wunderground.com/api/APIKEY/conditions/q/STATE/CITY.json";
+            // var url = "//api.wunderground.com/api/"+apiKey+"/conditions/q/"+state+"/"+city+".json";
+            var weather_api = new XMLHttpRequest();
+            weather_api.open("GET", url, false);
+            weather_api.send(null);
+            var resp = JSON.parse(weather_api.response);
+
             
             // var loc = "Current location: " + resp.current_observation.display_location.full;
             // var updated = resp.current_observation.observation_time;
