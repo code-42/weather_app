@@ -17,22 +17,26 @@
 	<!-- script file for API keys.js file contents:
     	var urlTag = '<script src="//api.wunderground.com/api/"+apiKey+"/conditions/q/"+state+"/"+city+".json"></script>'
     -->  
-	<script src="js/keys.js"></script>
 	<script src="js/index.js">
 	</script>
-	<title>Weather App</title>
+	<title>My Weather App</title>
 </head>
 <body>
 	<header>
-		<h1>Weather App</h1>
+		<h1>My Weather App</h1>
 	</header>
 	<main>
+		
 		<div class="weather-data" id="weather-data">
-			<div id="loc"></div>
-			<div id="updated"></div>
-			<div id="temp"></div>
-			<div id="weather"></div>
-			<div id="wind"></div>
+			<div class="block">
+				<div class="text-center">
+					<p><span id="cityName"></span></p>
+					<p id="tmp"><span id="temp"></span><span id="deg"></span><span class="tunit" id="tunit"></span></p>
+					<p id="msg" style="font-size:small"></p>
+					<p><span id="weather-description"></span></p>
+					<p><span id="weather-icon"><img src=""></span></p>
+				</div>
+			</div>	
 		</div>
 	</main>
 	<footer>

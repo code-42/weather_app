@@ -15,7 +15,7 @@
         
     }
     
-    #temp {
+    #tmp {
         font-size: 24px;
         font-weight: bold;
     }
@@ -72,7 +72,7 @@
         
     }
     
-    #temp{
+    #tmp{
         font-size: 24px;
         font-weight: bold;
     }
@@ -128,7 +128,7 @@
         
     }
     
-    #temp{
+    #tmp{
         font-size: 24px;
         font-weight: bold;
     }
@@ -185,7 +185,7 @@
         
     }
     
-    #temp{
+    #tmp{
         font-size: 36px;
         font-weight: bold;
     }
@@ -227,7 +227,7 @@
 
 }
 
- css below applies to all 
+ /*css below applies to all */
 
  * {
   -webkit-box-sizing: border-box;
@@ -268,3 +268,28 @@ h1{
     font-weight: bolder;
 } 
  
+.block{
+    /*position:relative;*/
+    /*z-index: -1;*/
+    background-color: #e3deee;
+    /*opacity: .2;*/
+    background: rgba(227, 222, 238, .2);
+    /*color: black;*/
+    padding: 50px 50px 50px 50px;
+    width: 55%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px 15px 15px 15px;
+    /*font-size: 1.5em;*/
+}
+
+.text-center{
+    position:relative;
+    z-index: 10;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color:#000;
+    opacity: .9;
+    
+}
