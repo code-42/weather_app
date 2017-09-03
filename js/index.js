@@ -47,7 +47,11 @@ var msg = "Click temperature above to convert C/F";
             weather_api.send(null);
             var resp = JSON.parse(weather_api.response);
 
-
+            var updated = resp.dt;
+            var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
+            d.setUTCSeconds(updated);
+            console.log("59. " + d);
+            
             $("#cityName").html(resp.name);
             cTemp = Math.round(resp.main.temp * 10) / 10;
             $("#temp").html(cTemp);
@@ -56,6 +60,9 @@ var msg = "Click temperature above to convert C/F";
             $("#weather-description").html(resp.weather[0].description);
             $("#weather-icon").html(resp.weather[0].icon);
             $("#msg").html(msg);
+            $("#updated").html(d.toDateString() + " " + d.toLocaleTimeString());
+            
+
                  
                  //switch api from weatherunderground to fcc-weather-api.glitch.me
 // var url = "//api.wunderground.com/api/APIKEY/conditions/q/RI/Providence.json";
