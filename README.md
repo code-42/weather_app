@@ -27,4 +27,4 @@ __Objective:__ Build a CodePen.io app that is functionally similar to this: http
 
 10. You can get feedback on your project by sharing it with your friends on Facebook
 
-<iframe width="923" height="519" src="https://www.youtube.com/embed/GCLiJU-vvVc" frameborder="0" allowfullscreen></iframe>
+[![freeCodeCamp YouTube video](https://www.youtube.com/embed/GCLiJU-vvVc)](https://www.youtube.com/embed/GCLiJU-vvVc)
