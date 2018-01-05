@@ -1,6 +1,6 @@
 # freeCodeCamp challenge: Show the Local Weather
 
-__URL__ https://code-42.github.io/weather_app target="_blank"
+__URL__ https://code-42.github.io/weather_app
 
 ![Jan 4 2018 snow storm picture](/resources/weather_app.png "Jan 4 2018 snow storm picture")
 
