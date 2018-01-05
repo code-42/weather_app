@@ -2,6 +2,8 @@
 
 __URL__ https://www.freecodecamp.org/challenges/show-the-local-weather
 
+![Jan 4 2018 snow storm picture](/resources/weather_app.png "Jan 4 2018 snow storm picture")
+
 
 __Objective:__ Build a CodePen.io app that is functionally similar to this: http://codepen.io/FreeCodeCamp/full/bELRjV.
 
